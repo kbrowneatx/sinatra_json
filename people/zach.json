@@ -1,0 +1,30 @@
+{
+	"name": "Zach Browne",
+	"favorites": {
+        "vacation": [
+            "Maui",
+            "OBX",
+            "San Diego"
+        ],
+        "device": [
+            "Xbox 360",
+            "PC",
+            "iPhone"
+        ],
+        "food": [
+            "Pizza",
+            "Chips"
+        ],
+        "dessert": [
+            "Sour Patch Skittles",
+            "Pop Tarts",
+            "Bomb Pops"
+        ],
+        "movie": [
+            "Iron Man",
+            "Avengers",
+            "Harry Potter"
+        ]
+	},
+	"bio": "High school junior (to be)"
+}

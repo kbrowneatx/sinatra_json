@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Sinatra with JSON</title>
+	<link rel='stylesheet' href='/style.css' type='text/css'>
+</head>
+<body>
+	<div id='header'>
+		<h1>Parsing People thru JSON</h1>
+		<p>Does this stuff really work?</p>
+		<nav>
+			<ul>
+				<li><a href='#'>Home</a></li>
+				<li><a href='#'>About</a></li>
+				<li><a href='#'>Legal</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id='wrapper'>
+		<div id='page'>
+		<div id='page-bgtop'>
+		<div id='page-bgbtm'>				
+			<div id='entrypg'>
+				<%= yield %>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div id='footer'>
+			<p>Copyright (c) 2013 fakeprofiler.com. All rights reserved. Site Design inspired by <a href='http://www.freecsstemplates.org/'>Free CSS Templates</a>.<br />
+		</div>
+	</div>
+</body>
+</html>

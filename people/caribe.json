@@ -1,0 +1,30 @@
+{
+	"name": "Caribe Browne",
+	"favorites": {
+        "vacation": [
+            "Maui",
+            "St John"
+        ],
+        "device": [
+            "iPad3",
+            "iPhone",
+            "Kindle"
+        ],
+        "food": [
+            "Artichoke dip",
+            "Lasagna",
+            "Grilled Chicken"
+        ],
+        "dessert": [
+            "Chocolate",
+            "Chocolate",
+            "Chocolate"
+        ],
+        "movie": [
+            "Sound of Music",
+            "Les Miserables",
+            "My Fair Lady"
+        ]
+	},
+	"bio": "Mother of two, retired SQL specialist"
+}

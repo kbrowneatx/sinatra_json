@@ -1,0 +1,31 @@
+{
+    "name": "Kevin Browne",
+    "favorites": {
+        "vacation": [
+            "Maui",
+            "OBX",
+            "Gettysburg"
+        ],
+        "device": [
+            "Xbox 360",
+            "PC",
+            "Kindle FireHD"
+        ],
+        "food": [
+            "New York Strip",
+            "Ribs",
+            "Grilled Chicken"
+        ],
+        "dessert": [
+            "Cherry Pie",
+            "Mint Chip Ice Cream",
+            "Chocolate Chip Cookies"
+        ],
+        "movie": [
+            "Star Wars",
+            "BSG",
+            "Saving Private Ryan"
+        ]
+    },
+    "bio": "Experienced software business leader and product management professional"
+}
