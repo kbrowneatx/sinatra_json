@@ -1,15 +1,14 @@
-module Fileops
+helpers do
 	def getpeople
 	  # get a listing of all the people
 	  people = []
-	  files = Dir.entries('/people')
+	  files = Dir.entries("people")
 	  files.each do |f|	
 		if f != "." && f != ".."
 		  people.push(f.slice(0..f.index(".")-1))
 		end
 	  end
-	  puts people
-	  #output the list in json
+	  return people
 	end
 
 	def getperson(name)
@@ -20,6 +19,4 @@ module Fileops
 	  puts person
 	  #output the list of favs in json
 	end
-	
-	helpers getpeople
 end

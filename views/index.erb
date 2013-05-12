@@ -6,6 +6,8 @@
 	<p>Here are the people for whom we have profiles:</p>
 	<p>&nbsp;</p>
 
-	<%= getpeople %>
+	<% @list.each do |n| %>
+		<h3><%= #{n}%></h3>
+	<% end %>
 
 </article>

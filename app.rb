@@ -10,6 +10,7 @@ class Person
 end
 
 get '/' do
+	@list = getpeople
 	erb :index
 end
 
