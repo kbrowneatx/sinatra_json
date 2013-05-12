@@ -1,4 +1,4 @@
-module fileops
+module Fileops
 	def getpeople
 	  # get a listing of all the people
 	  people = []
