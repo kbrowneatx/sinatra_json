@@ -18,6 +18,9 @@ helpers do
 	  p = JSON.parse(filecontents)
 	  q = Hash.new
 	  q = p.delete("favorites")
+	  q.each do |key, value|
+		q[key] = value.join(", ")
+	  end
 	  p = p.merge(q)
 	  return p
 	end

@@ -9,7 +9,11 @@
 		</tr>
 		<% @person.each do |key, value| %>
 		  <tr  class="filled">
-			<td><%="#{key}"%></td><td><%="#{value}"%></td>
+		    <% if key == "name" || key == "bio" %>
+				<td><%="#{key}"%></td><td><%="#{value}"%></td>
+			<% else %>
+				<td><%="favorite #{key}"%></td><td><%="#{value}"%></td>
+			<% end %>
 		  </tr>
 		  <tr class="unfilled"><td></td><td></td></tr>
 		<% end %>
