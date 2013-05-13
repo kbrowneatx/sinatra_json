@@ -13,10 +13,12 @@ helpers do
 
 	def getperson(name)
 	  # just get one person
-	  Dir.chdir("/people")
-	  puts name
-	  # filecontents = IO.read(name)
-	  # person = JSON.parse(filecontents)
-	  # return person
+	  filetoopen = "#{Dir.pwd}/people/#{name}"
+	  filecontents = IO.read(filetoopen)
+	  p = JSON.parse(filecontents)
+	  q = Hash.new
+	  q = p.delete("favorites")
+	  p = p.merge(q)
+	  return p
 	end
 end

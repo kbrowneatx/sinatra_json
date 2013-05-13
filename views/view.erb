@@ -2,7 +2,16 @@
 	<img src='http://placehold.it/200x750'>
 </aside>
 <article>
-	<h1><%= @person[:name] %></h1>
-	<p><%= @person[:movie] %></p>
-	<p><%= @person[:bio] %></p>
+	<h1><%= @person["name"] %></h1>
+	<table>
+		<tr>
+		<th class="keycol">Key</td><th class="valcol">Value</td>
+		</tr>
+		<% @person.each do |key, value| %>
+		  <tr  class="filled">
+			<td><%="#{key}"%></td><td><%="#{value}"%></td>
+		  </tr>
+		  <tr class="unfilled"><td></td><td></td></tr>
+		<% end %>
+	</table>
 </article>
