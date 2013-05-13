@@ -15,6 +15,6 @@ get '/' do
 end
 
 get '/people/:id' do
-	person = Person.new
+	@person = getperson(params[:persontosee])
 	erb :view
 end

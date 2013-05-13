@@ -1,11 +1,11 @@
 helpers do
 	def getpeople
 	  # get a listing of all the people
-	  people = []
+	  people = Hash.new
 	  files = Dir.entries("people")
 	  files.each do |f|	
 		if f != "." && f != ".."
-		  people.push(f.slice(0..f.index(".")-1))
+		  people[f.slice(0..f.index(".")-1)] = f
 		end
 	  end
 	  return people
@@ -13,10 +13,10 @@ helpers do
 
 	def getperson(name)
 	  # just get one person
-	  # in production use filecontents = IO.read('people/#{name}.json')
-	  filecontents = IO.read('/people/kevin.json')
-	  person = JSON.parse(filecontents)
-	  puts person
-	  #output the list of favs in json
+	  Dir.chdir("/people")
+	  puts name
+	  # filecontents = IO.read(name)
+	  # person = JSON.parse(filecontents)
+	  # return person
 	end
 end
